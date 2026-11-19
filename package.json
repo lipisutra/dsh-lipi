@@ -1,0 +1,65 @@
+{
+  "name": "@lipisutra/dsh-lipi",
+  "version": "1.0.0",
+  "description": "Native DeepSeek Harness bundle for lipi-managed projects: lipi_check, lipi_new, lipi_graph, lipi_slice and lipi_map tools plus the embedded lipi skill.",
+  "license": "MIT",
+  "author": "Stan",
+  "homepage": "https://github.com/lipisutra/dsh-lipi#readme",
+  "bugs": {
+    "url": "https://github.com/lipisutra/dsh-lipi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipisutra/dsh-lipi.git"
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "lipi",
+    "documentation",
+    "agent"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "skills",
+    "locale",
+    "docs",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": "0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "lipi": {
+    "min": "1.0.0"
+  }
+}

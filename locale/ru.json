@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Проверки документации lipi",
+    "description": "Добавляет агенту DeepSeek Harness инструменты lipi_check, lipi_slice, lipi_map, lipi_graph и lipi_new, команды /lipi-*, виджет со статусом проверок и встроенный скилл lipi для проектов, которые ведутся по lipi. Требует установленного lipi 1.0.0 или новее и проекта с lipi.json; не меняет ни lipi, ни правила проекта.",
+    "detail": "docs/ru/DETAIL.md"
+  }
+}

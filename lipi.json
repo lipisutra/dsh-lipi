@@ -1,0 +1,16 @@
+{
+  "docs": "docs/en",
+  "workflow": "workflow",
+  "enforce": false,
+  "languages": {
+    "default": "en",
+    "editions": {
+      "en": "docs/en",
+      "ru": "docs/ru"
+    },
+    "required": [
+      "en",
+      "ru"
+    ]
+  }
+}

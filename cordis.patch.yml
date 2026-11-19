@@ -1,0 +1,9 @@
+- insert:
+    - id: dsh-lipi
+      name: '@lipisutra/dsh-lipi'
+      config:
+        lipiPath: ''
+        wslDistro: Ubuntu
+        maxItems: 50
+        maxNodes: 200
+        maxEdges: 400

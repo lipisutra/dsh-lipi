@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "lipi documentation checks",
+    "description": "Adds the lipi_check, lipi_slice, lipi_map, lipi_graph, and lipi_new tools, the /lipi-* commands, a status widget, and the built-in lipi skill to DeepSeek Harness agents working in lipi-managed projects. Requires the installed lipi 1.0.0 or newer and a project with lipi.json; it changes neither lipi nor the project rules.",
+    "detail": "docs/en/DETAIL.md"
+  }
+}
